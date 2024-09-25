@@ -76,12 +76,12 @@ async def start(bot: Client, cmd: Message):
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Owner", callback_data="aboutOwner"),
+                        InlineKeyboardButton("About Owner", callback_data="aboutowner"),
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
                     ],
                     [
                         InlineKeyboardButton("Bots Channel", url="https://t.me/+rpoM2Z0qGX4wM2Nl"),
-                        InlineKeyboardButton(" Support Group", url="https://t.me/+vP3BfCoFYUc5MDg1")
+                        InlineKeyboardButton("Support Group", url="https://t.me/+vP3BfCoFYUc5MDg1")
                     ]
                 ]
             )
@@ -321,13 +321,13 @@ async def button(bot: Client, cmd: CallbackQuery):
                     ],
                     [
                         InlineKeyboardButton("Go Home", callback_data="gotohome"),
-                        InlineKeyboardButton("About Owner", callback_data="aboutOwner")
+                        InlineKeyboardButton("About Owner", callback_data="aboutowner")
                     ]
                 ]
             )
         )
 
-    elif "aboutOwner" in cb_data:
+    elif "aboutowner" in cb_data:
         await cmd.message.edit(
             Config.ABOUT_OWNER_TEXT,
             disable_web_page_preview=True,
@@ -356,7 +356,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Owner", callback_data="aboutOwner"),
+                        InlineKeyboardButton("About Owner", callback_data="aboutowner"),
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
                     ],
                     [
@@ -414,7 +414,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Owner", callback_data="aboutOwner")
+                        InlineKeyboardButton("About Owner", callback_data="aboutowner")
                     ]
                 ]
             )
