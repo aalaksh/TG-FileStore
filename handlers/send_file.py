@@ -1,5 +1,3 @@
-# (c) @AbirHasan2005 | @PredatorHackerzZ
-
 import asyncio
 from configs import Config
 from pyrogram import Client
